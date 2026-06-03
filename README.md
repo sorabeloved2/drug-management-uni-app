@@ -180,7 +180,6 @@ cp uniCloud-aliyun/cloudfunctions/health-ai/config.example.js \
 2. 注册/登录后进入「API Keys」页面
 3. 创建新的 API Key 并复制
 4. 粘贴到 `uniCloud-aliyun/cloudfunctions/health-ai/config.js` 中
-5. ⚠️ **该文件已被 .gitignore 忽略，不会提交到 Git**
 
 ---
 
