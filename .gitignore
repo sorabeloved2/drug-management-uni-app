@@ -1,0 +1,15 @@
+node_modules/
+unpackage/
+.hbuilderx/
+.DS_Store
+Thumbs.db
+*.log
+dist/
+.env.local
+.env.*.local
+*.swp
+*.swo
+*~
+.vscode/settings.json
+*.zip
+*.rar

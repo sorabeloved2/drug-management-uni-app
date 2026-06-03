@@ -1,0 +1,63 @@
+/* ========================================
+   药管家 — 现代极简设计系统
+   面向老年用户：大字号 · 高对比 · 大触控
+   ======================================== */
+
+/* ── 品牌色 ── */
+$uni-color-primary:   #2E7D32;
+$uni-color-primary-light: #E8F5E9;
+$uni-color-success:   #2E7D32;
+$uni-color-warning:   #E65100;
+$uni-color-warning-light: #FFF3E0;
+$uni-color-error:     #C62828;
+$uni-color-error-light: #FFEBEE;
+$uni-color-info:      #1565C0;
+$uni-color-info-light: #E3F2FD;
+
+/* ── 中性色（文字层级） ── */
+$uni-text-color:        #1A1A1A;
+$uni-text-color-grey:   #666666;
+$uni-text-color-placeholder: #999999;
+$uni-text-color-inverse: #FFFFFF;
+
+/* ── 背景 ── */
+$uni-bg-color:       #F0F2F5;
+$uni-bg-color-white: #FFFFFF;
+$uni-bg-color-card:  #FFFFFF;
+
+/* ── 边框 ── */
+$uni-border-color: #EEEEEE;
+
+/* ── 阴影（现代卡片层次） ── */
+$uni-shadow-sm: 0 2rpx 16rpx rgba(0, 0, 0, 0.04);
+$uni-shadow-md: 0 8rpx 32rpx rgba(0, 0, 0, 0.08);
+$uni-shadow-lg: 0 16rpx 48rpx rgba(0, 0, 0, 0.12);
+
+/* ── 圆角 ── */
+$uni-radius-sm:   16rpx;
+$uni-radius-md:   24rpx;
+$uni-radius-lg:   32rpx;
+$uni-radius-full: 9999rpx;
+
+/* ── 字号（老年友好 · 整体放大） ── */
+$uni-font-caption:  26rpx;
+$uni-font-body:     32rpx;
+$uni-font-subtitle: 36rpx;
+$uni-font-title:    40rpx;
+$uni-font-heading:  48rpx;
+$uni-font-display:  56rpx;
+
+/* ── 触控区域（≥ 88rpx / 44px） ── */
+$uni-touch-sm:  88rpx;
+$uni-touch-md:  96rpx;
+$uni-touch-lg:  104rpx;
+
+/* ── 间距 ── */
+$uni-spacing-xs:  12rpx;
+$uni-spacing-sm:  24rpx;
+$uni-spacing-md:  32rpx;
+$uni-spacing-lg:  40rpx;
+$uni-spacing-xl:  48rpx;
+
+/* ── 过渡 ── */
+$uni-transition: 0.2s ease;

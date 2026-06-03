@@ -1,0 +1,78 @@
+{
+  "bsonType": "object",
+  "required": ["name", "dosage", "period"],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "description": "记录ID，系统自动生成"
+    },
+    "name": {
+      "bsonType": "string",
+      "label": "药品名称",
+      "description": "药品名称，如：阿司匹林、降压药",
+      "maxLength": 50,
+      "trim": "both"
+    },
+    "dosage": {
+      "bsonType": "string",
+      "label": "剂量",
+      "description": "每次服用剂量，如：1片、10ml",
+      "maxLength": 30
+    },
+    "time": {
+      "bsonType": "string",
+      "label": "服用时间",
+      "description": "服药时间，格式 HH:MM",
+      "defaultValue": "08:00",
+      "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+    },
+    "period": {
+      "bsonType": "string",
+      "label": "时段",
+      "description": "上午/下午/晚上",
+      "enum": [
+        {
+          "value": "morning",
+          "text": "上午"
+        },
+        {
+          "value": "afternoon",
+          "text": "下午"
+        },
+        {
+          "value": "evening",
+          "text": "晚上"
+        }
+      ]
+    },
+    "note": {
+      "bsonType": "string",
+      "label": "备注",
+      "description": "服药备注，如：饭后服用、空腹服用",
+      "maxLength": 100,
+      "defaultValue": "饭后服用"
+    },
+    "icon": {
+      "bsonType": "string",
+      "label": "图标",
+      "description": "药品 emoji 图标",
+      "maxLength": 5
+    },
+    "created_at": {
+      "bsonType": "date",
+      "label": "创建时间",
+      "forceDefaultValue": {
+        "$env": "now"
+      }
+    },
+    "updated_at": {
+      "bsonType": "date",
+      "label": "更新时间"
+    }
+  }
+}

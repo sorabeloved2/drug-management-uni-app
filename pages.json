@@ -1,0 +1,96 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "药管家",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/record/record",
+      "style": {
+        "navigationBarTitleText": "服药记录",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/ai/ai",
+      "style": {
+        "navigationBarTitleText": "药小福",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/add/add",
+      "style": {
+        "navigationBarTitleText": "添加药物",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/drugs/drugs",
+      "style": {
+        "navigationBarTitleText": "药物管理",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/family/family",
+      "style": {
+        "navigationBarTitleText": "家属联动",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/profile/profile",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#f5f5f5"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#FF6F3C",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/record/record",
+        "text": "记录",
+        "iconPath": "static/tabbar/record.png",
+        "selectedIconPath": "static/tabbar/record-active.png"
+      },
+      {
+        "pagePath": "pages/ai/ai",
+        "text": "药小福",
+        "iconPath": "static/tabbar/ai.png",
+        "selectedIconPath": "static/tabbar/ai-active.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "添加",
+        "iconPath": "static/tabbar/add.png",
+        "selectedIconPath": "static/tabbar/add-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "static/tabbar/profile.png",
+        "selectedIconPath": "static/tabbar/profile-active.png"
+      }
+    ]
+  }
+}

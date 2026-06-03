@@ -1,0 +1,52 @@
+{
+  "bsonType": "object",
+  "required": ["medicine_id", "date"],
+  "permission": {
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+  },
+  "properties": {
+    "_id": {
+      "description": "记录ID，系统自动生成"
+    },
+    "medicine_id": {
+      "bsonType": "string",
+      "label": "药品ID",
+      "description": "关联的药品ID",
+      "foreignKey": "medicines._id"
+    },
+    "medicine_name": {
+      "bsonType": "string",
+      "label": "药品名称",
+      "description": "冗余存储药品名称，方便查询显示",
+      "maxLength": 50
+    },
+    "date": {
+      "bsonType": "string",
+      "label": "日期",
+      "description": "服药日期，格式 YYYY-MM-DD",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "time": {
+      "bsonType": "string",
+      "label": "时间",
+      "description": "服药时间，格式 HH:MM",
+      "pattern": "^([01]\\d|2[0-3]):[0-5]\\d$"
+    },
+    "period": {
+      "bsonType": "string",
+      "label": "时段",
+      "description": "记录服药时段",
+      "enum": ["morning", "afternoon", "evening"]
+    },
+    "created_at": {
+      "bsonType": "date",
+      "label": "创建时间",
+      "forceDefaultValue": {
+        "$env": "now"
+      }
+    }
+  }
+}
