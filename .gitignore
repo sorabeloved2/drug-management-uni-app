@@ -13,3 +13,7 @@ dist/
 .vscode/settings.json
 *.zip
 *.rar
+
+# 云函数敏感配置（含 API Key）
+uniCloud-aliyun/cloudfunctions/*/config.js
+!uniCloud-aliyun/cloudfunctions/*/config.example.js
